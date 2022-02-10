@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+{%block css %}
+<link rel="stylesheet" href="public/css/style.css"/>
+<link rel="stylesheet" href="public/css/dark-mode.css"/>
+{% endblock %}
+{% block top%}
+
+{% endblock %}
+
+{% block contenu%}
+
+
+<h1>Choose ur appareance</h1>
+
+<form method="POST" action="/add-cookie">
+
+<div>
+        <input type="radio" id="Light" name="appearance" value="Light" />
+        <label for="Light">Light</label>
+      </div>
+
+      <div>
+        <input type="radio" id="Dark" name="appearance" value="Dark" checked />
+        <label for="Dark">Dark</label>
+      </div>
+      <button type="submit">Send Data</button>
+</form>
+
+
+
+{% endblock %}
